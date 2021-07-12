@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#c6ffb3"
     tools:context=".MainActivity">
 
     <View
@@ -14,6 +14,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="10dp"
+        android:contentDescription="@string/decimal_converter"
         android:background="@drawable/green_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,25 +30,24 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
         android:text="@string/decimal_converter"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/top_background"
-        app:layout_constraintStart_toStartOf="@+id/top_background"
-        app:layout_constraintTop_toTopOf="@+id/top_background" />
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="300dp"
         android:layout_height="45dp"
         android:layout_marginTop="30dp"
+        android:autofillHints="@string/enter_a_decimal_number"
         android:background="@drawable/edit_text_border"
         android:backgroundTint="#FFFFFF"
         android:elevation="10dp"
         android:ems="10"
-        android:autofillHints="@string/enter_a_decimal_number"
         android:gravity="center"
         android:hint="@string/enter_a_decimal_number"
         android:inputType="numberDecimal"
@@ -61,37 +61,37 @@
         android:layout_width="match_parent"
         android:layout_height="235dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="20dp"
         app:cardCornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top_background" >
+        app:layout_constraintTop_toBottomOf="@+id/top_background">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/binary_answer"
             android:gravity="center"
-            android:paddingTop="66dp">
+            android:paddingTop="66dp"
+            android:text="@string/binary_answer">
 
         </TextView>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/octal_answer"
             android:gravity="center"
-            android:paddingTop="137dp">
+            android:paddingTop="137dp"
+            android:text="@string/octal_answer">
 
         </TextView>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/hexadecimal_answer"
             android:gravity="center"
-            android:paddingTop="211dp">
+            android:paddingTop="211dp"
+            android:text="@string/hexadecimal_answer">
 
         </TextView>
 
@@ -168,5 +168,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/submit" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/top_background"
+        app:srcCompat="@drawable/ic_baseline_calculate_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
