@@ -6,5 +6,5 @@
     <string name="enter_a_decimal_number">Enter a Decimal Number</string>
     <string name="decimal_converter">DECIMAL CONVERTER</string>
     <string name="convert">CONVERT</string>
-    <string name="reset">RESET</string>
+    <string name="reset">Reset</string>
 </resources>
