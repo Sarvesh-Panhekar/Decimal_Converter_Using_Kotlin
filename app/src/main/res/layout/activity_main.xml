@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -29,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:text="DECIMAL CONVERTER"
+        android:text="@string/decimal_converter"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -39,17 +40,18 @@
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="45dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/edit_text_border"
         android:backgroundTint="#FFFFFF"
         android:elevation="10dp"
         android:ems="10"
+        android:autofillHints="@string/enter_a_decimal_number"
         android:gravity="center"
-        android:hint="Enter a Decimal Number"
+        android:hint="@string/enter_a_decimal_number"
         android:inputType="numberDecimal"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -64,17 +66,46 @@
         app:cardCornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top_background" />
+        app:layout_constraintTop_toBottomOf="@+id/top_background" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/binary_answer"
+            android:gravity="center"
+            android:paddingTop="66dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/octal_answer"
+            android:gravity="center"
+            android:paddingTop="137dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hexadecimal_answer"
+            android:gravity="center"
+            android:paddingTop="211dp">
+
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
 
     <TextView
         android:id="@+id/output2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/edit_text_border"
         android:elevation="10dp"
         android:ems="10"
-        android:hint="Octal Answer"
         android:padding="10dp"
         android:textAlignment="center"
         android:textSize="20sp"
@@ -86,11 +117,10 @@
         android:id="@+id/output3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/edit_text_border"
         android:elevation="10dp"
         android:ems="10"
-        android:hint="Hexadecimal Answer"
         android:padding="10dp"
         android:textAlignment="center"
         android:textSize="20sp"
@@ -107,7 +137,6 @@
         android:layout_marginEnd="40dp"
         android:background="@drawable/edit_text_border"
         android:elevation="10dp"
-        android:hint="Binary Answer "
         android:padding="10dp"
         android:textAlignment="center"
         android:textSize="20sp"
@@ -117,12 +146,12 @@
 
     <Button
         android:id="@+id/submit"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_margin="8dp"
         android:backgroundTint="#00FF00"
-        android:text="CONVERT"
+        android:text="@string/convert"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -133,7 +162,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#00FF00"
-        android:text="Reset"
+        android:text="@string/reset"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

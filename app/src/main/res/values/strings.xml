@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Decimal Calculator</string>
+    <string name="octal_answer">Octal Answer</string>
+    <string name="hexadecimal_answer">Hexadecimal Answer</string>
+    <string name="binary_answer">Binary Answer</string>
+    <string name="enter_a_decimal_number">Enter a Decimal Number</string>
+    <string name="decimal_converter">DECIMAL CONVERTER</string>
+    <string name="convert">CONVERT</string>
+    <string name="reset">RESET</string>
 </resources>
