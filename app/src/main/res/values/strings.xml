@@ -7,4 +7,5 @@
     <string name="decimal_converter">DECIMAL CONVERTER</string>
     <string name="convert">CONVERT</string>
     <string name="reset">Reset</string>
+    <string name="splashscreen_logo">SplashScreen_logo</string>
 </resources>
