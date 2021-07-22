@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#c6ffb3"
+    android:background="#66ff33"
     tools:context=".SplashScreen">
 
     <ImageView
@@ -13,7 +13,7 @@
         android:layout_height="150dp"
         android:contentDescription="@string/splashscreen_logo"
         android:padding="10dp"
-        android:src="@drawable/splash_logo"
+        android:src="@drawable/ic_baseline_calculate_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
-        android:textColor="#00FF00"
+        android:textColor="#FFFFFF"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/logo_icon"

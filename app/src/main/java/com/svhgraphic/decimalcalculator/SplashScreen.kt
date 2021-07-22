@@ -18,9 +18,9 @@ class SplashScreen : AppCompatActivity() {
         val backgroundImage:ImageView = findViewById(R.id.logo_icon)
         val appName:TextView = findViewById(R.id.appName)
 
-        val sideAnimation = AnimationUtils.loadAnimation(this, R.anim.bottom_up)
+        val sideAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_in)
         backgroundImage.startAnimation(sideAnimation)
-        val sideAnimationText = AnimationUtils.loadAnimation(this, R.anim.bottom_up)
+        val sideAnimationText = AnimationUtils.loadAnimation(this, R.anim.fade_in)
         appName.startAnimation(sideAnimationText)
 
 
